@@ -1,0 +1,61 @@
+@function tint-colour($color, $weight) {
+  @return mix($light, $color, $weight);
+}
+@import "../node_modules/bootstrap/scss/functions";
+
+$primary: #5c64cf;
+$secondary: #c8b4ac;
+$success: #456990;
+$danger: #ff441b;
+$warning: #f7af24;
+$light: #fcfbfa;
+$dark: #422f21;
+$info: #9a6936;
+$body-bg: $light;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "danger": $danger,
+  "warning": $warning,
+  "light": $light,
+  "dark": $dark,
+  "info": $info,
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+section {
+  min-height: 100vh;
+}
+
+.main {
+  position: relative;
+  top: 10vh;
+}
+
+.btn_2 {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:tint-colour($success,80% ) ;
+}
+
+a{
+    color: tint-colour(black,20% );
+    text-decoration: none;
+}
+
+.name{
+  position: relative;
+  left: 17%;
+  top: 15px;
+  font-weight: bold;
+}
