@@ -8,10 +8,10 @@ import profilepic from "../image/Group 2.svg"
 export default function Homepage() {
   return (
     <>
-      <section>
-        <div className="main">
-          <Row className="mt-5">
-            <Col>
+      <section id="home">
+        <div className="main container">
+          <Row >
+            <Col className="mt-4" xs={{order:"last"}} sm="12" md="6" lg="6" >
               <h1 className="display-1 fw-normal">I Have</h1>
               <h1 className="display-1 fw-normal">Design</h1>
               <h1 className="display-1 fw-normal">Experience</h1>
@@ -25,10 +25,10 @@ export default function Homepage() {
               </Stack>
                 <Socialmedia/>              
             </Col>
-            <Col>
+            <Col className="mb-5 d-flex justify-content-center align-items-center" xs={{order:"first"}} sm="12" md="6" lg="6">
                 <div className="main">
-                    <img width={500} src={profilepic} alt="" />
-                    <h1 className="name">Bhanu Partap 😎</h1>
+                    <img className="profile" width={500} src={profilepic} alt="" />
+                    <h1 className="display-5 w-100 text-center">Bhanu Partap 😎</h1>
                 </div>
             </Col>
           </Row>
