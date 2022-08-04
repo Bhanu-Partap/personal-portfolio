@@ -20,16 +20,16 @@ export default function Homepage() {
                 design for companies all across the world.
               </p>
               <Stack direction="horizontal" gap="4">
-                <button className="btn btn-primary">
+                <a href="#contact" className="btn btn-primary">
                   Let's Talk{" "}
                   <FontAwesomeIcon
                     className="fa-fade"
                     icon="fa-solid fa-paper-plane"
                   />
-                </button>
-                <button className="btn btn-light">
+                </a>
+                <a href="#projects" className="btn btn-light">
                   Projects <BsArrowUpRight className="fa-beat" />
-                </button>
+                </a>
               </Stack>
               <Socialmedia />
             </Col>

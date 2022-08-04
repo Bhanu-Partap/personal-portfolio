@@ -50,7 +50,7 @@ export default function Servicespage() {
             </p>
             <Col>
               <div>
-                <img className="ms-5 mt-5" src={logo} width={150} alt="" />
+                <img className="ms-5 mt-5 logo" src={logo} width={150} alt="" />
               </div>
             </Col>
           </Col>
@@ -60,7 +60,7 @@ export default function Servicespage() {
               <Col xs="6" sm="6" md="6" lg="6">
                 <h1>01/</h1>
               </Col>
-              <Col xs="4" sm="4" md="4" lg="4">
+              <Col xs="6" sm="6" md="6" lg="6" >
                 <h1>Web UI/UX</h1>
                 <h1>Design</h1>
                 <p>Explore</p>
@@ -71,7 +71,7 @@ export default function Servicespage() {
               <Col xs="6" sm="6" md="6" lg="6">
                 <h1>02/</h1>
               </Col>
-              <Col xs="4" sm="4" md="4" lg="4">
+              <Col xs="6" sm="6" md="6" lg="6">
                 <h1>Frontend</h1>
                 <h1>Design</h1>
                 <p>Explore</p>
@@ -82,7 +82,7 @@ export default function Servicespage() {
               <Col xs="6" sm="6" md="6" lg="6">
                 <h1>03/</h1>
               </Col>
-              <Col xs="4" sm="4" md="4" lg="4">
+              <Col xs="6" sm="6" md="6" lg="6">
                 <h1>Images & Videos</h1>
                 <h1>Editing</h1>
                 <p>Explore</p>

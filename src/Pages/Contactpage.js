@@ -9,14 +9,14 @@ export default function Contactpage() {
   return (
     <section className="mb-4" id="contact">
       <div className="main container" xs={{ order: "last" }}>
-        <h1 className="display-1 fw-normal  ">Let's discuss </h1>
-        <h1 className="display-1 fw-normal ">Your Project</h1>
+        <h1 className="display-1 fw-normal w-100 text-end ">Let's discuss </h1>
+        <h1 className="display-1 fw-normal w-100 text-end">Your Project</h1>
         <hr />
         <Row className="mt-4">
-          <Col>
+          <Col xs="12" sm="12" md="6" lg="6">
             <Form>
               <Row>
-                <Col>
+                <Col xs="12" sm="12" md="6" lg="6">
                   <Form.Group className="mb-3">
                     <Form.Label htmlFor="FirstName">First Name</Form.Label>
                     <Form.Control
@@ -26,7 +26,7 @@ export default function Contactpage() {
                     />
                   </Form.Group>
                 </Col>
-                <Col>
+                <Col xs="12" sm="12" md="6" lg="6">
                   <Form.Group className="mb-3">
                     <Form.Label htmlFor="LastName">Last Name</Form.Label>
                     <Form.Control
@@ -38,7 +38,7 @@ export default function Contactpage() {
                 </Col>
               </Row>
               <Row>
-                <Col>
+                <Col xs="12" sm="12" md="6" lg="6">
                   <Form.Group className="mb-3">
                     <Form.Label htmlFor="E-Mail">E-mail</Form.Label>
                     <Form.Control
@@ -48,7 +48,7 @@ export default function Contactpage() {
                     />
                   </Form.Group>
                 </Col>
-                <Col>
+                <Col xs="12" sm="12" md="6" lg="6">
                   <Form.Group className="mb-3">
                     <Form.Label htmlFor="Subject">Subject</Form.Label>
                     <Form.Control
@@ -77,7 +77,7 @@ export default function Contactpage() {
             </Form>
 
           </Col>
-            <Col className="d-flex justify-content-center align-item-center">
+            <Col xs="12" sm="12" md="6" lg="6" className="d-flex justify-content-center align-item-center">
               <div className="m-auto"><Image className="d-block" src={logo} width={150}/>
                 <a className="btn btn-primary mx-3" href={cv}>Download CV</a>
               </div>

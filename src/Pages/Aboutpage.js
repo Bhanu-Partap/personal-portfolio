@@ -151,13 +151,13 @@ export default function Aboutpage() {
                 </Col>
               </Row>
               <Stack className="mt-4 mx-5" direction="horizontal" gap="4">
-                <button className="btn btn-primary">
+                <a href="#projects" className="btn btn-primary">
                   Projects <BsArrowUpRight className="fa-bounce" />
-                </button>
-                <button className="btn btn-light">
+                </a>
+                <a href="#contact" className="btn btn-light">
                   Contact Me&nbsp;
                   <IoMdContact className="fa-bounce" />
-                </button>
+                </a>
               </Stack>
             </Col>
           </Row>

@@ -36,6 +36,7 @@ section {
 .main {
   position: relative;
   top: 10vh;
+  margin-bottom: 90px;
 }
 
 .btn_2 {
@@ -84,6 +85,7 @@ a{
 
 }
 
+
 .active{
   color: $primary !important;
 
@@ -99,5 +101,13 @@ textarea{
   .profile{
     width: 300px;
   }
+  .img img{
+    width: 250px;
+    // margin-bottom: 90px;
+  }
+  .logo{
+    display: none;
+  }
+
 }
 
