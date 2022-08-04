@@ -15,17 +15,17 @@ export default function Socialmedia() {
             <span>Check Out My</span>
             <div className="btn_2">
               <a href="https://www.instagram.com/bhanupartaps25/">
-                <AiOutlineInstagram size={25}/>
+                <AiOutlineInstagram className="fa-beat" size={25}/>
               </a>
             </div>
             <div className="btn_2">
               <a href="https://github.com/Bhanu-Partap">
-                <AiFillGithub size={25}/>
+                <AiFillGithub className="fa-beat" size={25}/>
               </a>
             </div>
             <div className="btn_2">
               <a href="https://www.buymeacoffee.com/bhanupartap">
-                <AiOutlineCoffee size={25}/>
+                <AiOutlineCoffee className="fa-bounce" size={25}/>
               </a>
             </div>
           </Col>

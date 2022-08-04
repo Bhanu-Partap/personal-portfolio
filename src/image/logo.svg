@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="182" height="375" viewBox="0 0 182 375">
+  <g id="Logo" transform="translate(-698 -55)">
+    <text id="B" transform="translate(760 271)" fill="#f7af24" font-size="200" font-family="'Baloo Bhaijaan \32 '"><tspan x="0" y="0">B</tspan></text>
+    <text id="P" transform="matrix(-1, 0, 0, 1, 812, 304)" fill="#f7af24" font-size="200" font-family="'Baloo Bhaijaan \32 '"><tspan x="0" y="0">P</tspan></text>
+    <path id="Path_1" data-name="Path 1" d="M0,0V191.8" transform="translate(785.5 123.5)" fill="#f7af24" stroke="#f7af24" stroke-linecap="round" stroke-width="17"/>
+    <text id="Bhanu_Partap" data-name="Bhanu Partap" transform="translate(728 343)" fill="#5c64cf" font-size="20" font-family="'Baloo Bhaijaan \32 '" font-weight="700"><tspan x="0" y="0">Bhanu Partap</tspan></text>
+  </g>
+</svg>

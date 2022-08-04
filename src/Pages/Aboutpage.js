@@ -1,22 +1,51 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Col, Row, Stack } from "react-bootstrap";
 import { BsArrowUpRight } from "react-icons/bs";
 import { SiAdobephotoshop, SiAdobexd } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
 import { IoMdContact } from "react-icons/io";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 export default function Aboutpage() {
+  const fadeIn = {
+    hide: {
+      opacity: 0,
+      y: 10,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "tween",
+        duration: 1,
+      },
+    },
+  };
+
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+  const control = useAnimation();
+
+  useEffect(() => {
+    isInView ? control.start("visible") : control.start("hide");
+  }, [control, isInView]);
   return (
     <>
       <section id="about" className="bg-warning">
-        <div className="main container">
+        <motion.div
+          variants={fadeIn}
+          initial="hide"
+          animate={control}
+          ref={ref}
+          className="main container"
+        >
           <Row>
             <Col>
               <h1 className="display-1 fw-normal">Skills &</h1>
               <h1 className="display-1 fw-normal mb-4">Education</h1>
               <p className="mt-4 fs-6 mb-4" style={{ maxWidth: "420px" }}>
-                😎 A Specialist Frontend Developer. ✨ A passion of mine is
+                😎 A Specialist Frontend Developer💻. ✨ A passion of mine is
                 designing and solving problems through user experience, 😊
                 primarily on modern web UI.
               </p>
@@ -25,6 +54,7 @@ export default function Aboutpage() {
                 <Col xs="4" sm="4" md="4" lg="4">
                   <div className="btn_2 bg-dark">
                     <FontAwesomeIcon
+                      className="fa-bounce"
                       color="#fff"
                       icon="fa-solid fa-swatchbook"
                     />
@@ -33,13 +63,19 @@ export default function Aboutpage() {
                 </Col>
                 <Col xs="4" sm="4" md="4" lg="4">
                   <div className="btn_2 bg-dark">
-                    <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" />
+                    <FontAwesomeIcon
+                      className="fa-bounce"
+                      icon="fa-solid fa-magnifying-glass"
+                    />
                   </div>
                   <p>Research</p>
                 </Col>
                 <Col xs="4" sm="4" md="4" lg="4">
                   <div className="btn_2 bg-dark">
-                    <FontAwesomeIcon icon="fa-solid fa-diagram-project" />
+                    <FontAwesomeIcon
+                      className="fa-bounce"
+                      icon="fa-solid fa-diagram-project"
+                    />
                   </div>
                   <p>Prototype</p>
                 </Col>
@@ -47,21 +83,21 @@ export default function Aboutpage() {
               <Row>
                 <Col xs="4" sm="4" md="4" lg="4">
                   <div className="btn_2 bg-dark">
-                    <SiAdobephotoshop />
+                    <SiAdobephotoshop className="fa-bounce" />
                   </div>
                   <p>Photoshop</p>
                 </Col>
 
                 <Col xs="4" sm="4" md="4" lg="4">
                   <div className="btn_2 bg-dark">
-                    <SiAdobexd />
+                    <SiAdobexd className="fa-bounce" />
                   </div>
                   <p>Adobe XD</p>
                 </Col>
 
                 <Col xs="4" sm="4" md="4" lg="4">
                   <div className="btn_2 bg-dark">
-                    <TbBrandJavascript />
+                    <TbBrandJavascript className="fa-bounce" />
                   </div>
                   <p>JavaScript</p>
                 </Col>
@@ -114,13 +150,18 @@ export default function Aboutpage() {
                   </Row>
                 </Col>
               </Row>
-              <Stack className="mt-4 mx-5" direction="horizontal" gap="4"> 
-                <button className="btn btn-primary">Projects <BsArrowUpRight /></button>
-                <button className="btn btn-light">Contact Me<IoMdContact /></button>
+              <Stack className="mt-4 mx-5" direction="horizontal" gap="4">
+                <button className="btn btn-primary">
+                  Projects <BsArrowUpRight className="fa-bounce" />
+                </button>
+                <button className="btn btn-light">
+                  Contact Me&nbsp;
+                  <IoMdContact className="fa-bounce" />
+                </button>
               </Stack>
             </Col>
           </Row>
-        </div>
+        </motion.div>
       </section>
     </>
   );

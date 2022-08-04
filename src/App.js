@@ -7,6 +7,8 @@ import { faArrowUp, faMagnifyingGlass, faMagnifyingGlassLocation, faPaperPlane, 
 import Aboutpage from "./Pages/Aboutpage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Projectpage from "./Pages/Projectpage";
+import Servicespage from "./Pages/Servicespage";
+import Contactpage from "./Pages/Contactpage";
 library.add(faPaperPlane, faArrowUp, faSwatchbook, faMagnifyingGlass, faProjectDiagram);
 
 export default function App() {
@@ -69,10 +71,12 @@ export default function App() {
       <Navmenu />
       <Homepage />
       <Aboutpage />
+      <Projectpage />
+      <Servicespage />
+      <Contactpage />
       <a className="btn btn-primary scrollup" href="#">
         <FontAwesomeIcon size="2x" icon={"fa-solid fa-arrow-up"} />
       </a>
-      <Projectpage />
     </>
   );
 }
