@@ -5,7 +5,6 @@ import pathfinder from "../image/Pathfinder.png";
 import portfolio from "../image/Portfolio.png";
 import { motion, useInView, useAnimation } from "framer-motion";
 
-
 export default function Projectpage() {
   const fadeIn = {
     hide: {
@@ -32,7 +31,12 @@ export default function Projectpage() {
 
   return (
     <section ref={ref} id="projects">
-      <motion.div variants={fadeIn} initial="hide" animate={control} className="main container">
+      <motion.div
+        variants={fadeIn}
+        initial="hide"
+        animate={control}
+        className="main container"
+      >
         <h1 className="display-1 fw-normal ">Latest</h1>
         <h1 className="display-1 fw-normal ">Projects</h1>
         <hr />

@@ -50,6 +50,10 @@ section {
   background-color:tint-colour($success,80% ) ;
 }
 
+.margin{
+  margin-bottom: 90px;
+}
+
 a{
     color: tint-colour(black,20% );
     text-decoration: none;
@@ -69,7 +73,7 @@ a{
 
 .header{
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  transition: box-shadow 0.38s ease-in-out ;
+  transition: box-shadow 0.45s ease-in-out ;
 }
 
 .scrollup{
@@ -94,6 +98,11 @@ a{
 textarea{
   resize: none;
   height: 150px;
+}
+
+.footer{
+  color: white; 
+  // margin-top: 40px;
 }
 
 

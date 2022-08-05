@@ -4,6 +4,7 @@ import { Col, Row, Stack } from "react-bootstrap";
 import { BsArrowUpRight } from "react-icons/bs";
 import { SiAdobephotoshop, SiAdobexd } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
+import { DiMongodb } from "react-icons/di";
 import { IoMdContact } from "react-icons/io";
 import { motion, useInView, useAnimation } from "framer-motion";
 
@@ -63,12 +64,9 @@ export default function Aboutpage() {
                 </Col>
                 <Col xs="4" sm="4" md="4" lg="4">
                   <div className="btn_2 bg-dark">
-                    <FontAwesomeIcon
-                      className="fa-bounce"
-                      icon="fa-solid fa-magnifying-glass"
-                    />
+                    <DiMongodb className="fa-bounce" />
                   </div>
-                  <p>Research</p>
+                  <p>MongoDB</p>
                 </Col>
                 <Col xs="4" sm="4" md="4" lg="4">
                   <div className="btn_2 bg-dark">
@@ -156,7 +154,7 @@ export default function Aboutpage() {
                 </a>
                 <a href="#contact" className="btn btn-light">
                   Contact Me&nbsp;
-                  <IoMdContact className="fa-bounce" />
+                  <IoMdContact className="fa-bounce " />
                 </a>
               </Stack>
             </Col>

@@ -82,7 +82,7 @@ export default function Servicespage() {
               <Col xs="6" sm="6" md="6" lg="6">
                 <h1>03/</h1>
               </Col>
-              <Col xs="6" sm="6" md="6" lg="6">
+              <Col className="mb-4" xs="6" sm="6" md="6" lg="6">
                 <h1>Images & Videos</h1>
                 <h1>Editing</h1>
                 <p>Explore</p>

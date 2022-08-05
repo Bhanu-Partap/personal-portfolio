@@ -77,6 +77,7 @@ export default function App() {
       <a className="btn btn-primary scrollup" href="#">
         <FontAwesomeIcon size="2x" icon={"fa-solid fa-arrow-up"} />
       </a>
+      <footer />
     </>
   );
 }
